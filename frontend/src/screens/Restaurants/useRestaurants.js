@@ -11,7 +11,7 @@ const useRestaurants = () => {
     const { data: restaurantsData, isLoading, refetch: getRestaurants } = useQuery({
         queryKey: ["getRestaurants"],
         queryFn: async () => {
-            const res = await axios.get('http://localhost:8080/restaurants');
+            const res = await axios.get('https://foodiedelight-five.vercel.app/restaurants');
             return res?.data?.data;
         },
         onError: () => {
@@ -21,7 +21,7 @@ const useRestaurants = () => {
 
     const deleteRestaurant = useMutation({
         mutationFn: (restaurant) => {
-            return axios.delete(`http://localhost:8080/restaurants/${restaurant._id}`)
+            return axios.delete(`https://foodiedelight-five.vercel.app/restaurants/${restaurant._id}`)
         },
         onSuccess: () => {
             getRestaurants()

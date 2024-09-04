@@ -26,7 +26,7 @@ const useAddorEditModal = (getRestaurants, selectedRestaurant, setSelectedRestau
 
     const addRestaurant = useMutation({
         mutationFn: (newRestaurant) => {
-            return axios.post('http://localhost:8080/restaurants', newRestaurant)
+            return axios.post('https://foodiedelight-five.vercel.app/restaurants', newRestaurant)
         },
         onSuccess: () => {
             getRestaurants()
@@ -41,7 +41,7 @@ const useAddorEditModal = (getRestaurants, selectedRestaurant, setSelectedRestau
 
     const updateRestaurant = useMutation({
         mutationFn: (restaurant) => {
-            return axios.put(`http://localhost:8080/restaurants/${selectedRestaurant._id}`, restaurant)
+            return axios.put(`https://foodiedelight-five.vercel.app/restaurants/${selectedRestaurant._id}`, restaurant)
         },
         onSuccess: () => {
             getRestaurants()
