@@ -1,0 +1,53 @@
+.content__section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.dialog__title{
+    padding-bottom: 0 !important;
+}
+
+.error__message {
+    color: red;
+    margin: 0; 
+    margin-left: 11rem;
+    padding: 0
+}
+
+.content__section h3 {
+    width: 11rem;
+}
+
+.content__section input {
+    width: 22rem;
+}
+
+.MuiSelect-root {
+    width: 21rem !important;
+}
+
+.save__button {
+    padding: 0.25rem 1rem;
+    font-size: 1.2rem;
+    background-color: #392f5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    border: 1px solid #392f5a;
+}
+
+.cancel__button {
+    padding: 0.25rem 1rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #392f5a;
+    border: 1px solid #392f5a;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-bottom: 0.8rem;
+}

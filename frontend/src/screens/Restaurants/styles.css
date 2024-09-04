@@ -1,0 +1,196 @@
+.add__restaurant__button {
+  padding: 0.5rem 2.5rem;
+  font-size: 1.2rem;
+  background-color: #392f5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button__section {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+
+.list__card {
+  display: flex;
+  font-size: 1.2rem;
+  margin: 1rem 4rem;
+  border-radius: 8px;
+  height: 8rem;
+  padding: 5px 10px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.list__card p {
+  line-height: 2.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.first__section {
+  width: 35%;
+  text-align: start;
+  border-right: 1px solid #bebebe;
+  margin-right: 1rem;
+}
+
+.second__section {
+  width: 55%;
+  text-align: start;
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.third__section {
+  width: 10%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.third__section > * {
+  padding: 0.2rem 0rem;
+  font-size: 1.2rem;
+  background-color: #392f5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.2rem 0;
+}
+
+.third__section i {
+  font-size: 1rem;
+}
+
+.delete__button {
+  background-color: red;
+}
+
+.manage__button {
+  background-color: rgb(225, 183, 30);
+}
+
+.edit__button {
+  background-color: #392f5a;
+  margin-top: 1.5rem;
+}
+
+.fa-pen {
+  margin-left: 2.5rem;
+}
+
+.fa-trash {
+  margin-left: 1.5rem;
+}
+
+.loader__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 5px solid #392f5a;
+  animation: l20-1 0.8s infinite linear alternate, l20-2 1.6s infinite linear;
+}
+
+@keyframes l20-1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+  12.5% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%
+    );
+  }
+  25% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      100% 100%,
+      100% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  62.5% {
+    clip-path: polygon(
+      50% 50%,
+      100% 0,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  75% {
+    clip-path: polygon(
+      50% 50%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 50%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+}
+@keyframes l20-2 {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+  }
+  49.99% {
+    transform: scaleY(1) rotate(135deg);
+  }
+  50% {
+    transform: scaleY(-1) rotate(0deg);
+  }
+  100% {
+    transform: scaleY(-1) rotate(-135deg);
+  }
+}

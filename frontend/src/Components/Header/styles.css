@@ -1,0 +1,24 @@
+header {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  background-color: #392f5a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > * {
+  color: white;
+}
+
+.heading__text {
+  font-size: 2rem;
+}
+
+i {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
